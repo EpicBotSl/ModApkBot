@@ -25,5 +25,7 @@ CHANEL⛱️ [</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰](https://t.me/EpicBotsSl)
 GROUP 🎋[EPIC CHAT](https://t.me/EpicChats)
 
 ### Credit🎀
-[NAVANJANA](https://t.me/NA_VA_N_JA_NA1)
-[WISULA](https://t.me/wisula4)
+[🔥NAVANJANA](https://t.me/NA_VA_N_JA_NA1)
+
+
+[🔥WISULA](https://t.me/wisula4)
