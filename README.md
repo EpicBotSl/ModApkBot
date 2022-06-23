@@ -8,7 +8,7 @@
     <a href="https://github.com/EpicBotSl/ModApkBot/commits/prince"> <img src="https://img.shields.io/github/last-commit/EpicBotSl/ModApkBot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/EpicBotSl/ModApkBot/issues"> <img src="https://img.shields.io/github/issues/EpicBotSl/EpicBotSl?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/EpicBotSl/ModApkBot/network/members"> <img src="https://img.shields.io/github/forks/EpicBotSl/ModApkBot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://python.org"><img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python"></a>
 </p>
 ━━━━━━━━━━━━━━━━━━━━━━
 <p align="center">
