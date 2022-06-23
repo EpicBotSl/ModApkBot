@@ -12,11 +12,11 @@
 </p>
 ━━━━━━━━━━━━━━━━━━━━━━
 <p align="center">
-  <img src="https://telegra.ph/file/eb19583d1ba5dd440bb1f.jpg">
+  <img src="https://telegra.ph/file/93972afb2683e30e652d1.jpg">
 </p>
 
 ## Deploy To Heroku 🔥
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/EpicBotSl/ModApkBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-gold?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/EpicBotSl/ModApkBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-rose?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
  ━━━━━━━━━━━━━━━━━━━━━━
 
 ### Support🎀
