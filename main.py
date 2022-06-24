@@ -95,7 +95,7 @@ async def startprivate(epicbot, message):
     )
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
-@epicbot.on_message(filters.incoming & filters.chat(-1001645328504))
+@epicbot.on_message(filters.incoming & filters.chat(-1001609244993))
 async def bchanl(bot, update, broadcast_ids={}): 
     all_users = await db.get_all_users()
     broadcast_msg= update
@@ -137,9 +137,9 @@ async def bchanl(bot, update, broadcast_ids={}):
     await out.delete()
     
     if failed == 0:
-        await bot.send_message(-1001689365631, f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.")
+        await bot.send_message(-1001645328504, f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.")
     else:
-        await bot.send_document(-1001689365631, 'broadcastlog.txt', caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.")
+        await bot.send_document(-1001645328504, 'broadcastlog.txt', caption=f"broadcast completed in `{completed_in}`\n\nTotal users {total_users}.\nTotal done {done}, {success} success and {failed} failed.")
     os.remove('broadcastlog.txt') 
     
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
