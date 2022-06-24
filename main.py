@@ -93,6 +93,22 @@ async def startprivate(epicbot, message):
         disable_web_page_preview=True,
         quote=True
     )
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+@epicbot.on_message(filters.command("logs"))
+async def giblog(bot, message):
+    if message.from_user.id not in AUTH_USERS:
+        await message.delete()
+        return
+    process = await message.reply_text( "`Trying To Fetch Logs....`")
+    herokuHelper = HerokuHelper(HEROKU_APP_NAME, HEROKU_API_KEY)
+    logz = herokuHelper.getLog()
+    with open("logs.txt", "w") as log:
+        log.write(logz)
+    await process.delete()
+    await bot.send_document(
+        message.chat.id, "logs.txt", caption=f"**Logs Of {HEROKU_APP_NAME}**"
+    )
+    os.remove("logs.txt")
 
 print("started")
 epicbot.run()
