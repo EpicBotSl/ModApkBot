@@ -222,13 +222,12 @@ async def startprivate(bot, message):
     countb = await db.total_users_count()
     count = await bot.get_chat_members_count(-1001620454933)
     counta = await bot.get_chat_members_count(-1001620454933)
-    text=f"""**Bot Advanced Statistics 📊**
-** 👥Members Counts in Our channel:**
-◉──────────────────────────────────◉
- **MemeHub Telegram 🇱🇰  Users** : `{count}`
- **⚜️MemeHub Family⚜️ (Admins)**   : `{counta}`
- **ᴍᴇᴍᴇʜᴜʙ ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』 Users** : `{countb}`
-◉──────────────────────────────────◉
+    text=f"""**Total Bot Users & State**
+** ⚡Members Counts in Our channel & Bot⚡**
+╔══════════════════════════════════╗
+ **🎋Mod Apk Bot State🎋** --> `{countb}`
+ 🌱**</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰 State** --> `{count}`
+╚══════════════════════════════════╝ 
 """
     await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
     await bot.send_message(message.chat.id, text=text)
