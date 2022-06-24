@@ -31,7 +31,14 @@ import aiofiles
 import datetime
 from pyrogram.errors.exceptions.bad_request_400 import *
 
-@Client.on_message(filters.regex(pattern="📊 Statistics"))   
+epicbot = Client(
+    "Epic bot",
+    API_ID,
+    API_HASH,
+    bot_token=BOT_TOKEN,
+)
+
+@epicbot.on_message(filters.command("status"))   
 async def startprivate(bot, message):
     splatform = platform.system()
     platform_release = platform.release()
