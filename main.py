@@ -178,6 +178,22 @@ async def status(bot, update):
     )
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+@epicbot.on_message(command("apk") & filters.private & ~filters.group & ~filters.edited)
+async def start_(epicbot: epicbot, message: Message):
+    await message.delete()
+    await message.reply_sticker("CAACAgUAAxkBAAEFHD5itTEihLwB5gABPP58guE5OLp9JRoAArQFAAIiWKlVyHUsM5q363opBA")
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/c5d565f260031d17b345e.jpg",
+        caption=f"""**
+👻 ʜᴇʏ {message.from_user.mention()} !
+𝖨𝗆 𝖤𝗉𝗂𝖼 𝖬𝗎𝗌𝗂𝖼 𝖡𝗈𝗍 𝖨 𝖺𝗆 𝖯𝗈𝗐𝖾𝗋𝖥𝗎𝗅𝗅 𝖵𝖼 𝖡𝗈𝗍💥
+❇ 𝖨 𝖢𝖺𝗇 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖲𝗈𝗇𝗀𝗌🐧
+❇ 𝖨 𝖢𝖺𝗇 𝗉𝗅𝖺𝗒 𝖲𝗈𝗇𝗀𝗌 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 𝖵𝖼🌴
+❇ 𝖨 𝖢𝖺𝗇 𝖦𝖾𝗍 𝖴𝗌𝖾𝗋𝗌 𝖨𝖽🍁
+𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 </ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰**""",
+    reply_markup = CLOSE_BUTTON
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
 @epicbot.on_message(filters.command("send"))
 async def status(bot, message):
     if message.from_user.id not in AUTH_USERS:
