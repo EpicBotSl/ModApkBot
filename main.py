@@ -198,7 +198,7 @@ async def status(bot, message):
     await send_msg(PRIVATE_LOG, message=mesg)
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
-@epicbot.on_message(filters.command("status"))   
+@epicbot.on_message(filters.command("state"))   
 async def startprivate(bot, message):
     splatform = platform.system()
     platform_release = platform.release()
@@ -222,10 +222,11 @@ async def startprivate(bot, message):
     countb = await db.total_users_count()
     count = await bot.get_chat_members_count(-1001620454933)
     counta = await bot.get_chat_members_count(-1001620454933)
-    text=f"""**🏅Total Bot Users & Our Chanel State🏅**
+    text=f"""**🏅Total Bot Users & Our Chanel State**
 ╔═══════════════════════════════════╗
- **🎋Mod Apk Bot State🎋** --> 🏅`{countb}`
- **🌱Epic Developers🌟** --> 🏅`{count}`
+  **🎋Mod Apk Bot State🎋** 🏅`{countb}`
+
+  **🌱Epic Developers🌟** 🏅`{count}`
 ╚═══════════════════════════════════╝ 
 """
     await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
