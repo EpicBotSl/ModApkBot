@@ -44,6 +44,9 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
                 "CAACAgQAAxkBAAEFHRFitZFRwzQPYrVUQkxVP4yxF2Uw3gAC4AkAAu9GYFGTgHavjO_HLikE",
                 "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
+SOCIAL_STCR = ["CAACAgIAAxkBAAEFHYlitctS-IDhiJNlKE11OVmU3RQFVwAC9wADVp29CgtyJB1I9A0wKQQ",
+               "CAACAgIAAxkBAAEFHYtitctcgiticIOWNsoFNuuWkGQBOgACAgEAAladvQpO4myBy0Dk_ykE"
+         ]
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
