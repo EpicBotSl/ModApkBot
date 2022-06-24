@@ -38,8 +38,7 @@ DEVS_BTN = InlineKeyboardMarkup([[
 
 
 STAT_STICKER = ["CAACAgIAAxkBAAEFHFRitVx3od7xZ4d7uh_9wth0gc-CDgACvAwAAocoMEntN5GZWCFoBCkE",
-                "CAACAgIAAxkBAAEFHFZitVyrIa3dO6Z0TGEjvt_HTIOFpQACHgADFm5MEugIOg_PO1U1KQQ",
-                "CAACAgUAAxkBAAEFHFhitVy3lqCiFFDK0QjwV-ia4DBqGQACrQUAAm3yKFbw8gs6F-M3kSkE"              
+                "CAACAgIAAxkBAAEFHFZitVyrIa3dO6Z0TGEjvt_HTIOFpQACHgADFm5MEugIOg_PO1U1KQQ"              
          ]  
 
 DEVS_MG = "🎀This Is Epic Mod Apk Bot'S Devs🎀"
