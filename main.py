@@ -72,18 +72,18 @@ async def startprivate(epicbot, message):
     #return
     chat_id = message.from_user.id
     if not await db.is_user_exist(chat_id):
-        data = await client.get_me()
+        data = await epicbot.get_me()
         BOT_USERNAME = data.username
         await db.add_user(chat_id)
         if -1001645328504:
-            await client.send_message(
+            await epicbot.send_message(
                 -1001645328504,
                 f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n\**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!",
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
-    await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
+    await epicbot.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
     text = f"Hi {message.from_user.mention}, Welcome to  Epic Mod Apk Bot"
     reply_markup = START_BUTTON  
     await message.reply_text(
