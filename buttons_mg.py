@@ -12,8 +12,8 @@ START_BUTTON = InlineKeyboardMarkup([[
                  InlineKeyboardButton('🆘HELP🆘', callback_data="HELP")
                  ],
                  [
-                 InlineKeyboardButton(text="</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰", url="),
-                 InlineKeyboardButton("⛱️SUPPORT ⛱️", url="https://t.me/EpicBotsSl")
+                 InlineKeyboardButton(text="</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰", url="https://t.me/EpicBotsSl"),
+                 InlineKeyboardButton("⛱️SUPPORT ⛱️", url="https://t.me/EpicChats")
                  ],
                  [
                  InlineKeyboardButton("🔥BOT DEVELOPERS🔥", callback_data="DEVS")
