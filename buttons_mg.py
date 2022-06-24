@@ -24,6 +24,14 @@ CLOSE_BUTTON = InlineKeyboardMarkup([
 [InlineKeyboardButton('Close☄️', callback_data="back_main")]
 ])
 
+DEVS_BTN = InlineKeyboardMarkup([[
+             InlineKeyboardButton('</N/A/V/A/N/J/A/N/A\>', url="https://t.me/NA_VA_N_JA_NA1")
+             ],
+             [
+             InlineKeyboardButton('</ᴍᴇᴛʜɪɴᴅᴜ ᴡɪsᴜʟᴀ/>', url="https://t.me/wisula4")
+             ]]
+              )
+
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
 print("🌟Bot Started Successfully 🌟"),
