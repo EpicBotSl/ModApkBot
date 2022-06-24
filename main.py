@@ -178,9 +178,11 @@ async def status(bot, update):
     )
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
 @epicbot.on_message(filters.command("apk"))
 async def start(app, message):
-  await message.reply_sticker("CAACAgIAAxkBAAEFHWxitcJUs1HTx-cT-w_vv9jm9bFQDQAC9wADVp29CgtyJB1I9A0wKQQ", caption=CTG_MG, reply_markup=CTG_BUTTONS)
+  await message.reply_photo("https://te.legra.ph/file/d57dfa030c388a3097f49.jpg", caption=CTG_MG, reply_markup=CTG_BUTTONS)
+
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
 @epicbot.on_message(filters.command("send"))
