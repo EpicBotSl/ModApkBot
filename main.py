@@ -185,7 +185,7 @@ async def start(app, message):
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
-@Client.on_message(filters.regex(pattern="SOCIAL🎭"))   
+@epicbot.on_message(filters.regex(pattern="SOCIAL🎭"))   
 async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
