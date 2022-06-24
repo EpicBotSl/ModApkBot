@@ -242,7 +242,7 @@ async def start_menu(_,query):
 async def tgm(bot, update):  
     if update.data == "add": 
         await update.answer(
-             text="♻️Adding Soon......",
+             text="Epic Industry",
         )
     elif update.data == "Back_M":
          await update.message.edit_text(
@@ -251,7 +251,23 @@ async def tgm(bot, update):
              disable_web_page_preview=True
          )
          await update.answer(
-             text="👻 ʙᴀᴍᴄᴋ 👻",
+             text="Menu Backed🔙",
+         )
+
+@epicbot.on_callback_query()  
+async def tgm(bot, update):  
+    if update.data == "add": 
+        await update.answer(
+             text="Epic Industry",
+        )
+    elif update.data == "Back_M":
+         await update.message.edit_text(
+             text=START_MG,
+             reply_markup=START_BUTTON,
+             disable_web_page_preview=True
+         )
+         await update.answer(
+             text="Menu Backed🔙",
          )
 
 print("Epic Main.Py Started 🌹")
