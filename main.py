@@ -191,7 +191,7 @@ async def startprivate(bot, message):
 
 @epicbot.on_message(filters.regex(pattern="TELEGRAM PREMIUM 👑"))   
 async def startprivatet(bot, message):
-     await bot.send_document(message.chat.id, "AAMCBAADGQEAAVIKLGK13XhxFrYEQdvX4kdjkWKrE6UbAAJADQACb7-YUYWxlA8INcUzAQAHbQADKQQ")
+     await bot.send_document(message.chat.id, "BQADAQADoAIAAq-jqEXufMUTzYHLkAI")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
