@@ -94,7 +94,7 @@ async def startprivate(epicbot, message):
         quote=True
     )
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-@epicbot.on_message(filters.command("logs"))
+@epicbot.on_message(filters.command("stable"))
 async def giblog(bot, message):
     if message.from_user.id not in AUTH_USERS:
         await message.delete()
@@ -109,6 +109,26 @@ async def giblog(bot, message):
         message.chat.id, "logs.txt", caption=f"**Logs Of {HEROKU_APP_NAME}**"
     )
     os.remove("logs.txt")
+
+@epicbot.on_message(filters.private & filters.chat(LOG_CHANNEL) & filters.command("status"), group=5)
+async def status(bot, update):
+    if update.from_user.id not in AUTH_USERS:
+        await message.delete()
+        return
+    if not await db.is_user_exist(update.from_user.id):
+         await db.add_user(update.from_user.id)
+         
+    await bot.send_sticker(update.chat.id, random.choice(STAT_STICKER))
+    total_users = await db.total_users_count()
+    text = "**Bot Advanced Statistics 📊**\n"
+    text += f"\n**Total Users:** `{total_users}`"
+
+    await update.reply_text(
+        text=text,
+        quote=True,
+        disable_web_page_preview=True
+    )
+
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 @epicbot.on_message(filters.command("send"))
 async def status(bot, message):
