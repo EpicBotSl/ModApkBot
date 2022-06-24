@@ -62,7 +62,7 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 #=•=•=•Db=•=•=#
 DATABASE_URL=MONGO_URI
-db = Database(DATABASE_URL, "mongodb+srv://Navanjana:Navanjana@cluster0.zdnpe.mongodb.net/?retryWrites=true&w=majority")
+db = Database(DATABASE_URL, "epic_bot")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Risived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 #=•=•=•=Def Start=•=•=•=#
