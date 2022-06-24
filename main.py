@@ -238,11 +238,18 @@ async def start_menu(_,query):
   await query.answer()
   await query.message.edit(DEVS_MG, reply_markup = DEVS_BTN)
 
-@epicbot.on_callback_query(filters.regex("back_main"))
-async def back_menu(_,query):
-  await query.answer()
-  await query.message.edit(START_MG, reply_markup = START_BUTTON)
-
+@epicbot.on_callback_query()  
+async def tgm(bot, update):  
+    if update.data == "add": 
+        await update.answer(
+             text="♻️Adding Soon.....",
+        )
+    elif update.data == "bak":
+         await update.message.edit_text(
+             text=START_MG,
+             reply_markup=START_BUTTON,
+             disable_web_page_preview=True
+         )
 
 print("Epic Main.Py Started 🌹")
 epicbot.run()
