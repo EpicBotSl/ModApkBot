@@ -56,16 +56,14 @@ CTG_BUTTONS = ReplyKeyboardMarkup(
             ["SOCIAL🎭"],
             ["PHOTO SHOPS🎨", "GAMES🎯"]   
         ],
-        resize_keyboard=True,
-        one_time_keyboard=True
+        resize_keyboard=True
     )
 
 SOCIAL_APS = ReplyKeyboardMarkup(
       [
             ["TELEGRAM PREMIUM 👑", "YT PREMIUM 👑"]
         ],
-        resize_keyboard=True,
-        one_time_keyboard=True
+        resize_keyboard=True
     )
 
 DEVS_MG = "👩‍💻This Is Epic Mod Apk Bot'S Devs🎀"
