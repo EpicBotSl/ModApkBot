@@ -33,3 +33,14 @@ START_BUTTON = InlineKeyboardMarkup([[
                   )
 
 
+start_menu = ReplyKeyboardMarkup(
+      [
+            ["🤴 OWNER 🤴"],
+            ["💻 Bot Devs 💻", "👮‍♂️ MemeHub Admins 👮‍♂️"],
+            ["📊 Statistics"]
+           
+        ],
+        resize_keyboard=True  # Make the keyboard smaller
+    )
+
+print("Config Stated")
