@@ -49,4 +49,53 @@ async def send_msg(user_id, message):
         return 400, f"{user_id} : user id invalid\n"
     except Exception as e:
         return 500, f"{user_id} : {traceback.format_exc()}\n"
+
+#=•=•=•=•=•=•=•=•=•=Db End Point•=•=•=•=•=•=•=•=•=•#
+epicbot = Client(
+    "Epic Mod Apk Bot",
+    bot_token= BOT_TOKEN,
+    api_id= API_ID,
+    api_hash= API_HASH,
+)
+
+Heroku = heroku3.from_key(HEROKU_API_KEY)
+heroku_api = "https://api.heroku.com"
+#=•=•=•Db=•=•=#
+DATABASE_URL=MONGO_URI
+db = Database(DATABASE_URL, " mongodb+srv://Navanjana:Navanjana@cluster0.zdnpe.mongodb.net/?retryWrites=true&w=majority")
+
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Risived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+#=•=•=•=Def Start=•=•=•=#
+
+@epicbot.on_message(filters.command("start"))
+async def startprivate(epicbot, message):
+    #return
+    chat_id = message.from_user.id
+    if not await db.is_user_exist(chat_id):
+        data = await client.get_me()
+        BOT_USERNAME = data.username
+        await db.add_user(chat_id)
+        if -1001618208549:
+            await client.send_message(
+                -1001618208549,
+                f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n\**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!",
+            )
+        else:
+            logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
+    file_id = "CAADBQADowwAAretqFR36va45QlD0gI"
+    await client.send_sticker(message.chat.id, file_id, reply_markup=start_menu)
+    text = f"Hi {message.from_user.mention}, Welcome to  Epic Mod Apk Bot"
+    reply_markup = START_BUTTON  
+    await message.reply_text(
+        text=text,
+        reply_markup=reply_markup,
+        disable_web_page_preview=True,
+        quote=True
+    )
+
+print("started")
+epicbot.run()
+        
+
+     
         
