@@ -24,6 +24,8 @@ CLOSE_BUTTON = InlineKeyboardMarkup([
 [InlineKeyboardButton('Close☄️', callback_data="back_main")]
 ])
 
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
 DEVS_BTN = InlineKeyboardMarkup([[
              InlineKeyboardButton('</N/A/V/A/N/J/A/N/A\>', url="https://t.me/NA_VA_N_JA_NA1")
              ],
@@ -32,9 +34,19 @@ DEVS_BTN = InlineKeyboardMarkup([[
              ]]
               )
 
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
+
+STAT_STICKER = ["CAACAgIAAxkBAAEFHFRitVx3od7xZ4d7uh_9wth0gc-CDgACvAwAAocoMEntN5GZWCFoBCkE",
+                "CAACAgIAAxkBAAEFHFZitVyrIa3dO6Z0TGEjvt_HTIOFpQACHgADFm5MEugIOg_PO1U1KQQ",
+                "CAACAgUAAxkBAAEFHFhitVy3lqCiFFDK0QjwV-ia4DBqGQACrQUAAm3yKFbw8gs6F-M3kSkE"              
+         ]  
+
 DEVS_MG = "🎀This Is Epic Mod Apk Bot'S Devs🎀"
 
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
 print("🌟Bot Started Successfully 🌟"),
 print("🎀🎀Join For Updates @EpicBotsSl🎀🎀")
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
