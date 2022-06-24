@@ -9,27 +9,18 @@ from pyrogram.types import *
 
 #Epic Bots 2022© All Rights Resived Created By Navanjana Sathsindu
 START_BUTTON = InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@N_Abeysinghe_2001")
+                 InlineKeyboardButton('🆘HELP🆘', callback_data="HELP")
                  ],
                  [
-                 InlineKeyboardButton(text="🌴 ʜᴇʟᴘ 🌴",callback_data="hlp"),
-                 InlineKeyboardButton("🍄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🍄", url="https://github.com/TeamAlphaTg/MemehubtgSl_Bot")
+                 InlineKeyboardButton(text="</ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰", url="),
+                 InlineKeyboardButton("⛱️SUPPORT ⛱️", url="https://t.me/EpicBotsSl")
                  ],
                  [
-                 InlineKeyboardButton("➕ sʜᴀʀᴇ ➕", switch_inline_query="share"),
-                 InlineKeyboardButton("➕ sʜᴀʀᴇ ᴄʜɴʟ ➕", switch_inline_query="cshare")
+                 InlineKeyboardButton("🔥BOT DEVELOPERS🔥", callback_data="DEVS")
                  ]]
                   )
 
-
-start_menu = ReplyKeyboardMarkup(
-      [
-            ["🤴 OWNER 🤴"],
-            ["💻 Bot Devs 💻", "👮‍♂️ MemeHub Admins 👮‍♂️"],
-            ["📊 Statistics"]
-           
-        ],
-        resize_keyboard=True  # Make the keyboard smaller
-    )
-
-print("Buttons & message py started🔥")
+print("Buttons & message py started🔥"),
+print("Your Bot Is Running ⚡"),
+print("🌟Bot Started Successfully 🌟"),
+print("🎀🎀Join For Updates @EpicBotsSl🎀🎀")
