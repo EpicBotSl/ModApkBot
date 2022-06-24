@@ -27,18 +27,21 @@ CLOSE_BUTTON = InlineKeyboardMarkup([
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
 DEVS_BTN = InlineKeyboardMarkup([[
-             InlineKeyboardButton('</N/A/V/A/N/J/A/N/A\>', url="https://t.me/NA_VA_N_JA_NA1")
+             InlineKeyboardButton('ɴᴀᴠᴀɴᴊᴀɴᴀ', url="https://t.me/NA_VA_N_JA_NA1"),
+             InlineKeyboardButton('ᴍᴇᴛʜɪɴᴅᴜ ᴡɪsᴜʟᴀ', url="https://t.me/wisula4")
              ],
              [
-             InlineKeyboardButton('</ᴍᴇᴛʜɪɴᴅᴜ ᴡɪsᴜʟᴀ/>', url="https://t.me/wisula4")
-             ]]
-              )
+             InlineKeyboardButton('🔙', callback_data="Back_M")
+             ]])
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
 
-STAT_STICKER = ["CAACAgIAAxkBAAEFHFRitVx3od7xZ4d7uh_9wth0gc-CDgACvAwAAocoMEntN5GZWCFoBCkE",
-                "CAACAgIAAxkBAAEFHFZitVyrIa3dO6Z0TGEjvt_HTIOFpQACHgADFm5MEugIOg_PO1U1KQQ"              
+STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP_0GLhzykE",
+                "CAACAgQAAxkBAAEFHRVitZFYQ_EPOF7Y1GenAAHZOfu6xNIAAj4MAAKd3llQRh5-qJlCwa0pBA",
+                "CAACAgQAAxkBAAEFHRNitZFVEBwdq0uFJDOvDRx2IzdoCwAC5wwAAubdSFEk6BkQ4EbQ1ikE",
+                "CAACAgQAAxkBAAEFHRFitZFRwzQPYrVUQkxVP4yxF2Uw3gAC4AkAAu9GYFGTgHavjO_HLikE",
+                "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
 
 DEVS_MG = "🎀This Is Epic Mod Apk Bot'S Devs🎀"
