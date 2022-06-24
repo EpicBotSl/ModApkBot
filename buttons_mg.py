@@ -20,9 +20,9 @@ START_BUTTON = InlineKeyboardMarkup([[
                  ]]
                   )
 
-CLOSE_BUTTON = InlineKeyboardMarkup[
+CLOSE_BUTTON = InlineKeyboardMarkup([
 [InlineKeyboardButton('Close☄️', callback_data="back_main")]
-]
+])
 
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
