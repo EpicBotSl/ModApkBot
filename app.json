@@ -36,6 +36,10 @@
             "description": "Private log chanel",
             "value": ""
         },
+        "LOG_CHANNEL": {
+            "description": "id of yout log chanel",
+            "value": ""
+        },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps",
             "value": "cc4535cefe1fa2e167d75a5e2ac24246"
