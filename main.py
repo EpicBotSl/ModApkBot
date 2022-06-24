@@ -133,7 +133,7 @@ async def status(bot, message):
 @epicbot.on_callback_query(filters.regex("DEVS"))
 async def start_menu(_,query):
   await query.answer()
-  await query.message.edit(DEVS_MG,reply_markup=InlineKeyboardMarkup(DEVS_BTN))
+  await query.message.edit(DEVS_MG, reply_markup = DEVS_BTN)
 
 print("Epic Main.Py Started 🌹")
 epicbot.run()
