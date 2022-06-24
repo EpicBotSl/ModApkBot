@@ -185,7 +185,7 @@ async def apk(epicbot: epicbot, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c5d565f260031d17b345e.jpg",
     file_id = "AgADoAIAAq-jqEU"
-    await epicbot.send_file(message.chat.id, file_id)
+    await epicbot.send_file(message.chat.id, file_id),
         caption=f"""**
 👻 ʜᴇʏ {message.from_user.mention()} !
 𝖨𝗆 𝖤𝗉𝗂𝖼 𝖬𝗎𝗌𝗂𝖼 𝖡𝗈𝗍 𝖨 𝖺𝗆 𝖯𝗈𝗐𝖾𝗋𝖥𝗎𝗅𝗅 𝖵𝖼 𝖡𝗈𝗍💥
