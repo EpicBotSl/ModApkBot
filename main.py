@@ -240,12 +240,8 @@ async def start_menu(_,query):
 
 @epicbot.on_callback_query()  
 async def tgm(bot, update):  
-    if update.data == "add": 
+    if update.data == "Back_M": 
         await update.answer(
-             text="♻️Adding Soon.....",
-        )
-    elif update.data == "bak":
-         await update.message.edit_text(
              text=START_MG,
              reply_markup=START_BUTTON,
              disable_web_page_preview=True
