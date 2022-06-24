@@ -179,21 +179,8 @@ async def status(bot, update):
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 @epicbot.on_message(filters.command("apk"))
-async def apk(epicbot: epicbot, message: Message):
-    await message.delete()
-    await message.reply_sticker("CAACAgUAAxkBAAEFHD5itTEihLwB5gABPP58guE5OLp9JRoAArQFAAIiWKlVyHUsM5q363opBA")
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/c5d565f260031d17b345e.jpg",
-    file_ids = "AgADoAIAAq-jqEU",
-    await epicbot.send_file(message.chat.id, file_ids),
-        caption=f"""**
-👻 ʜᴇʏ {message.from_user.mention()} !
-𝖨𝗆 𝖤𝗉𝗂𝖼 𝖬𝗎𝗌𝗂𝖼 𝖡𝗈𝗍 𝖨 𝖺𝗆 𝖯𝗈𝗐𝖾𝗋𝖥𝗎𝗅𝗅 𝖵𝖼 𝖡𝗈𝗍💥
-❇ 𝖨 𝖢𝖺𝗇 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖲𝗈𝗇𝗀𝗌🐧
-❇ 𝖨 𝖢𝖺𝗇 𝗉𝗅𝖺𝗒 𝖲𝗈𝗇𝗀𝗌 𝖥𝗈𝗋 𝖸𝗈𝗎𝗋 𝖵𝖼🌴
-❇ 𝖨 𝖢𝖺𝗇 𝖦𝖾𝗍 𝖴𝗌𝖾𝗋𝗌 𝖨𝖽🍁
-𝖢𝗋𝖾𝖺𝗍𝖾𝖽 𝖡𝗒 </ᴇᴘɪᴄ ʙᴏᴛs <s/ʟ>🇱🇰**""",
-    reply_markup = CLOSE_BUTTON)
+async def start(app, message):
+  await message.reply_photo("https://telegra.ph/file/ba8e2c222f7a4f82dd592.jpg",caption=START_MG,reply_markup=InlineKeyboardMarkup(START_BTN))
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
 @epicbot.on_message(filters.command("send"))
