@@ -31,14 +31,14 @@ import aiofiles
 import datetime
 from pyrogram.errors.exceptions.bad_request_400 import *
 
-epistatics = Client(
+epicbot = Client(
     "Epic bot",
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
 )
 
-@epistatics.on_message(filters.command("status"))   
+@epicbot.on_message(filters.command("status"))   
 async def startprivate(bot, message):
     splatform = platform.system()
     platform_release = platform.release()
@@ -71,5 +71,4 @@ async def startprivate(bot, message):
 ◉──────────────────────────────────◉
 
 print("Apk Sections/statics.py started Successfully!☄️🌱")
-epistatics.run()
 
