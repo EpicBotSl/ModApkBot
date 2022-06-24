@@ -95,7 +95,3 @@ async def startprivate(epicbot, message):
 
 print("started")
 epicbot.run()
-        
-
-     
-        
