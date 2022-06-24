@@ -7,7 +7,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import *
 from pyrogram.types import *
 
-@app.on_callback_query(filters.regex("HELP_CALLBACK"))
+@app.on_callback_query(filters.regex("DEVS"))
 async def start_menu(_,query):
   await query.answer()
   await query.message.edit(DEVS_MG,reply_markup=InlineKeyboardMarkup(DEVS_BTN))
