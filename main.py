@@ -122,7 +122,6 @@ async def status(bot, update):
     total_users = await db.total_users_count()
     text = "**Bot Advanced Statistics 📊**\n"
     text += f"\n**Total Users:** `{total_users}`"
-
     await update.reply_text(
         text=text,
         quote=True,
