@@ -5,7 +5,7 @@ import logging
 
 from database.db import Database
 
-db = Database(MONGO_URI, "Memehub_bot")  
+db = Database(MONGO_URI, "epic_bot")  
 
 async def handle_user_status(bot, cmd):
     chat_id = cmd.from_user.id
