@@ -241,7 +241,7 @@ async def start_menu(_,query):
 @epicbot.on_callback_query(filters.regex("back_main"))
 async def start_menu(_,query):
   await query.answer()
-  await query.message.edit(START_MG, reply_markup = START_BUTTON)
+  await query.message.edit(f"Hi 🌹{message.from_user.mention}, 🌱Welcome to **Epic Mod Apk Bot⚡**", reply_markup = START_BUTTON)
 
 
 print("Epic Main.Py Started 🌹")
