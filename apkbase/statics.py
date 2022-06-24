@@ -1,3 +1,36 @@
+#Epic Bots 2022© All Rights Resived Created By Navanjana Sathsindu
+from pyrogram.errors import *
+from pyrogram import Client, filters
+from pyrogram.errors import *
+from pyrogram.types import *
+from helper.decorators import humanbytes
+from config import *
+from buttons_mg import *
+from database.db import Database
+from asyncio import *
+import heroku3
+import requests
+from helper.heroku_helper import HerokuHelper
+import re
+import uuid
+import socket
+import platform
+import os
+import random
+import time
+import math
+import json
+import string
+import traceback
+import psutil
+import asyncio
+import wget
+import motor.motor_asyncio
+import pymongo
+import aiofiles
+import datetime
+from pyrogram.errors.exceptions.bad_request_400 import *
+
 @Client.on_message(filters.regex(pattern="📊 Statistics"))   
 async def startprivate(bot, message):
     splatform = platform.system()
