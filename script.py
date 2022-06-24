@@ -9,7 +9,6 @@ from pyrogram.types import *
 from pyrogram.types import Message
 
 #Epic Bots 2022© All Rights Resived Created By Navanjana Sathsindu
-START_MG = f"Hi 🌹{Message.from_user.mention}, 🌱Welcome to **Epic Mod Apk Bot⚡**"
 START_BUTTON = InlineKeyboardMarkup([[              
                  InlineKeyboardButton('🆘HELP🆘', callback_data="HELP")
                  ],
