@@ -83,16 +83,9 @@ async def startprivate(epicbot, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-    photo_url = "https://telegra.ph/file/c5d565f260031d17b345e.jpg"
-    await epicbot.reply_photo(message.chat.id, photo_url, reply_markup=start_menu)
-    text = f"Hi {message.from_user.mention}, Welcome to  Epic Mod Apk Bot"
-    reply_markup = START_BUTTON  
-    await message.reply_text(
-        text=text,
-        reply_markup=reply_markup,
-        disable_web_page_preview=True,
-        quote=True
-    )
+            await message.reply_photo("https://telegra.ph/file/ba8e2c222f7a4f82dd592.jpg",caption=Start_s,reply_markup=START_BUTTON)
+  
+Start_s = "Hi I'm Epic Mod Apk Bot"
 
 print("started")
 epicbot.run()
