@@ -32,6 +32,8 @@ DEVS_BTN = InlineKeyboardMarkup([[
              ]]
               )
 
+DEVS_MG = "🎀This Is Epic Mod Apk Bot'S Devs🎀"
+
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
 print("🌟Bot Started Successfully 🌟"),
