@@ -109,6 +109,25 @@ async def giblog(bot, message):
         message.chat.id, "logs.txt", caption=f"**Logs Of {HEROKU_APP_NAME}**"
     )
     os.remove("logs.txt")
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+@epicbot.on_message(filters.command("send"))
+async def status(bot, message):
+    if message.from_user.id not in AUTH_USERS:
+        await message.delete()
+        return
+    mesg=message.reply_to_message
+    f= message.text
+    s=f.replace('/send ' ,'')
+    fid=s.replace('%20', ' ')
+    await send_msg(user_id=fid, message=mesg)
+    await message.delete()
+    await bot.send_message(message.chat.id, text=f"Ur Msg Sent To [User](tg://user?id={fid})", reply_markup=CLOSE_BUTTON)
+    await bot.send_message(PRIVATE_LOG,text=f"""#SEND_LOG
+• **Send By:** {message.from_user.mention} [`{message.from_user.id}`]
+• **Send To:** [User](tg://user?id={fid}) [`{fid}`]
+• **Message:-**
+""")
+    await send_msg(PRIVATE_LOG, message=mesg)
 
 print("started")
 epicbot.run()
