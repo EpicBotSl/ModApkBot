@@ -31,14 +31,14 @@ import aiofiles
 import datetime
 from pyrogram.errors.exceptions.bad_request_400 import *
 
-epicbot = Client(
+epistatics = Client(
     "Epic bot",
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
 )
 
-@epicbot.on_message(filters.command("status"))   
+@epistatics.on_message(filters.command("status"))   
 async def startprivate(bot, message):
     splatform = platform.system()
     platform_release = platform.release()
@@ -69,3 +69,7 @@ async def startprivate(bot, message):
  **⚜️MemeHub Family⚜️ (Admins)**   : `{counta}`
  **ᴍᴇᴍᴇʜᴜʙ ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』 Users** : `{countb}`
 ◉──────────────────────────────────◉
+
+print("Apk Sections/statics.py started Successfully!☄️🌱")
+epistatics.run()
+
