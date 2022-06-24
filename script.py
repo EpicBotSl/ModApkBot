@@ -45,9 +45,9 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
                 "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
 
-DEVS_MG = "🎀This Is Epic Mod Apk Bot'S Devs🎀"
+DEVS_MG = "👩‍💻This Is Epic Mod Apk Bot'S Devs🎀"
 
-START_MG = "{message.from_user.mention}, 🌱Welcome to Epic Mod Apk Bot⚡"
+START_MG = "🌱Welcome to Epic Mod Apk Bot⚡"
 
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
