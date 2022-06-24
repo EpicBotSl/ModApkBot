@@ -18,29 +18,3 @@ API_HASH = os.getenv("API_HASH")  # from https://my.telegram.org/apps
 AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1884885842 5115331277 5025877489 1202064253 1120271521").split())
 MONGO_URI = os.getenv("MONGO_URI")
 
-#Epic Bots 2022© All Rights Resived Created By Navanjana Sathsindu
-START_BUTTON = InlineKeyboardMarkup([[              
-                 InlineKeyboardButton('🍁 Owner 🍁', user_id="@N_Abeysinghe_2001")
-                 ],
-                 [
-                 InlineKeyboardButton(text="🌴 ʜᴇʟᴘ 🌴",callback_data="hlp"),
-                 InlineKeyboardButton("🍄 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🍄", url="https://github.com/TeamAlphaTg/MemehubtgSl_Bot")
-                 ],
-                 [
-                 InlineKeyboardButton("➕ sʜᴀʀᴇ ➕", switch_inline_query="share"),
-                 InlineKeyboardButton("➕ sʜᴀʀᴇ ᴄʜɴʟ ➕", switch_inline_query="cshare")
-                 ]]
-                  )
-
-
-start_menu = ReplyKeyboardMarkup(
-      [
-            ["🤴 OWNER 🤴"],
-            ["💻 Bot Devs 💻", "👮‍♂️ MemeHub Admins 👮‍♂️"],
-            ["📊 Statistics"]
-           
-        ],
-        resize_keyboard=True  # Make the keyboard smaller
-    )
-
-print("Config Stated")
