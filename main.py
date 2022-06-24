@@ -187,7 +187,7 @@ async def start(app, message):
 
 @Client.on_message(filters.regex(pattern="SOCIAL🎭"))   
 async def startprivate(bot, message):
-     await bot.send_sticker(message.chat.id, random.choice(OWNER_STICKER),reply_markup=OWNER_BTN)
+     await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
