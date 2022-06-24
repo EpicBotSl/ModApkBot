@@ -45,6 +45,18 @@ STAT_STICKER = ["CAACAgQAAxkBAAEFHRditZFgRBAPm-9bkFJUQKOjSEgxoQACfwsAAmgpeVF2roP
                 "CAACAgQAAxkBAAEFHQ9itZFNixLf7fEZICaK8DF-Li967wACUAwAAmEq4VF8xFsUvkvQXSkE"              
          ]  
 
+#=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+
+CTG_MG = "🔍Chek Bellow & see all Mod Apk categories"
+CTG_BUTTONS = ReplyKeyboardMarkup(
+      [
+            ["SOCIAL🎭"],
+            ["PHOTO SHOPS🎨", "GAMES🎯"]   
+        ],
+        resize_keyboard=True,
+        one_time_keyboard=True
+    )
+
 DEVS_MG = "👩‍💻This Is Epic Mod Apk Bot'S Devs🎀"
 
 START_MG = "🌱Welcome to Epic Mod Apk Bot⚡"
