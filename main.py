@@ -83,7 +83,7 @@ async def startprivate(epicbot, message):
             )
         else:
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
-    file_id = "CAACAgUAAxkBAAEFHD5itTEihLwB5gABPP58guE5OLp9JRoAArQFAAIiWKlVyHUsM5q363opBA"
+    file_id = "CAACAgIAAxkBAAEFHSBitZsmpQpnfJ5XCFRtQ13JT74KLQACTgIAAladvQow_mttgTIDbykE"
     await epicbot.send_sticker(message.chat.id, file_id)
     text = f"Hi 🌹{message.from_user.mention}, 🌱Welcome to **Epic Mod Apk Bot⚡**"
     reply_markup = START_BUTTON
@@ -239,7 +239,7 @@ async def start_menu(_,query):
   await query.message.edit(DEVS_MG, reply_markup = DEVS_BTN)
 
 @epicbot.on_callback_query(filters.regex("back_main"))
-async def start_menu(_,query):
+async def back_menu(_,query):
   await query.answer()
   await query.message.edit(START_MG, reply_markup = START_BUTTON)
 
