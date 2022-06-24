@@ -13,7 +13,7 @@ async def handle_user_status(bot, cmd):
         data = await bot.get_me()
         BOT_USERNAME = data.username
         await db.add_user(chat_id)
-        if -1001759991131:
+        if -1001645328504:
             await bot.send_message(
                 -1001645328504,
                 f"#NEWUSER: \n\n**User:** [{message.from_user.first_name}](tg://user?id={message.from_user.id})\n\**ID:**{message.from_user.id}\n Started @{BOT_USERNAME} !!",
