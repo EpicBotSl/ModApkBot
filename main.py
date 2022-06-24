@@ -230,6 +230,8 @@ async def startprivate(bot, message):
  **ᴍᴇᴍᴇʜᴜʙ ᴏᴍғғɪᴄɪᴀʟ ʙᴏᴍᴛ 『🇱🇰』 Users** : `{countb}`
 ◉──────────────────────────────────◉
 """
+    await bot.send_sticker(message.chat.id, random.choice(STAT_STICKER))
+    await bot.send_message(message.chat.id, text=text)
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
 @epicbot.on_callback_query(filters.regex("DEVS"))
