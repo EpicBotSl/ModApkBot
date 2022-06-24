@@ -1,4 +1,4 @@
-{
+ {
     "name": "Epic Apk Bot",
     "description": "All in one Epic Mod Apk Bot",
     "repository": "https://github.com/EpicBotSl/ModApkBot",
@@ -10,19 +10,19 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot token from @Botfather",
-            "value": ""
+            "value": "5491777887:AAFriDnrwSIQlVqod1jQdrAebMtbygB_Aqg"
         },
         "API_ID": {
             "description": "Your API_ID from https://my.telegram.org/apps ",
-            "value": ""
+            "value": "16884543"
         },
         "MONGO_URI": {
             "description": "mongo URL, Get it from mongodb.com",
-            "value": ""
+            "value": "mongodb+srv://Navanjana:Navanjana@cluster0.zdnpe.mongodb.net/?retryWrites=true&w=majority"
         },
         "AUTH_USERS": {
             "description": "Sudo User ids",
-            "value": ""
+            "value": "5196689118"
         },
         "HEROKU_API_KEY": {
             "description": "Ur HEROKU_API fromm https://dashboard.heroku.com/account",
@@ -34,7 +34,7 @@
         },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps",
-            "value": ""
+            "value": "cc4535cefe1fa2e167d75a5e2ac24246"
         }
     },
     "stack": "heroku-20",
