@@ -178,8 +178,8 @@ async def status(bot, update):
     )
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-@epicbot.on_message(filters.command("apk") & filters.private & ~filters.group & ~filters.edited)
-async def start_(epicbot: epicbot, message: Message):
+@epicbot.on_message(filters.command("apk"))
+async def apk(epicbot: epicbot, message: Message):
     await message.delete()
     await message.reply_sticker("CAACAgUAAxkBAAEFHD5itTEihLwB5gABPP58guE5OLp9JRoAArQFAAIiWKlVyHUsM5q363opBA")
     await message.reply_photo(
