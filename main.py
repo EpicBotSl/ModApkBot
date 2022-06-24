@@ -188,6 +188,7 @@ async def start(app, message):
 @epicbot.on_message(filters.regex(pattern="SOCIAL🎭"))   
 async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
+     await bot.send_document(message.chst.id, "AAMCBAADGQEAAVIKLGK13XhxFrYEQdvX4kdjkWKrE6UbAAJADQACb7-YUYWxlA8INcUzAQAHbQADKQQ")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
