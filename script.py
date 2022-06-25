@@ -70,6 +70,8 @@ DEVS_MG = "👩‍💻This Is Epic Mod Apk Bot'S Devs🎀"
 
 START_MG = "🌱Welcome to Epic Mod Apk Bot⚡"
 
+SHARE_BUTTON_TEXT = "share please🏅"
+
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
 print("🌟Bot Started Successfully 🌟"),
