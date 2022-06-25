@@ -190,7 +190,7 @@ async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
 async def main():
-    async with app:
+    async with epicbot:
         # Get bot results for "hello" from the inline bot @vid
         bot_results = await epicbot.get_inline_bot_results("vid", "hello")
 
