@@ -6,13 +6,13 @@ from umongo import Instance, Document, fields
 from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
 
-from config import DATABASE_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER
 from .helpers import unpack_new_file_id
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
-client = AsyncIOMotorClient(DATABASE_URI)
+client = AsyncIOMotorClient(MONGO_URI)
 database = client[DATABASE_NAME]
 instance = Instance.from_db(database)
 
