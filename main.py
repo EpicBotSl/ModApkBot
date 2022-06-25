@@ -295,4 +295,4 @@ async def tgm(bot, update):
          )
 
 print("Epic Main.Py Started 🌹")
-epicbot.run()
+epicbot.run(main())
