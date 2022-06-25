@@ -189,13 +189,13 @@ async def start(app, message):
 async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
-@epicbot.on_message(filters.document & filters.private)
+@epicbot.on_message(filters.apk & filters.private)
 def document(bot, message):
- message.reply(message.document.file_id) #get file
+ message.reply(message.apk.file_id) #get file
 
 @epicbot.on_message(filters.command('doc'))
 def document(bot, message):
- bot.send_document(message.chat.id, "BQADAQADoAIAAq-jqEXufMUTzYHLkAI")
+ bot.send_apk(message.chat.id, "BQADAQADoAIAAq-jqEXufMUTzYHLkAI")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
