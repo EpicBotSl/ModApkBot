@@ -191,7 +191,7 @@ async def startprivate(bot, message):
 
 @epicbot.on_message(filters.regex(pattern="TELEGRAM PREMIUM 👑"))   
 async def startprivates(bot, message):
-     await epicbot.send_document("me", "AgAD8wcAAqKEuFU", caption="document caption")
+     await epicbot.send_document("me", "BQADBQAD6gYAArPzuFXk4V7iAAEdTD8C", caption="document caption")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
