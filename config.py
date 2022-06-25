@@ -20,4 +20,5 @@ MONGO_URI = os.getenv("MONGO_URI")
 PRIVATE_LOG = os.getenv("PRIVATE_LOG")
 LOG_CHANNEL = os.getenv("LOG_CHANNEL")
 AUTH_CHANNEL = os.getenv("AUTH_CHANNEL")
+CACHE_TIME = os.getenv("CACHE_TIME")
 
