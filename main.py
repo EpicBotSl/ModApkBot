@@ -192,7 +192,7 @@ async def start(app, message):
 async def main():
     async with epicbot:
         # Get bot results for "hello" from the inline bot @vid
-        bot_results = await messages.GetInlineBotResults("vid", "hello")
+        bot_results = await Message.GetInlineBotResults("vid", "hello")
 
         # Send the first result to your own chat (Saved Messages)
         await epicbot.send_inline_bot_result(
