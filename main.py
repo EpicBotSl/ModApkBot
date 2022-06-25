@@ -198,10 +198,6 @@ async def main():
         # Get bot results for "hello" from the inline bot @vid
         bot_results = await epicbot.get_inline_bot_results("vid", "hello")
 
-        # Send the first result to your own chat (Saved Messages)
-        await epicbot.send_inline_bot_result(
-            "me", bot_results.query_id,
-            bot_results.results[0].id)
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
