@@ -40,6 +40,14 @@
             "description": "Inline Catch Time",
             "value": ""
         },
+        "COLLECTION_NAME": {
+            "description": "Collection Name",
+            "value": ""
+        },
+        "USE_CAPTION_FILTER": {
+            "description": "Caption Filters",
+            "value": ""
+        },
         "AUTH_CHANNEL": {
             "description": "for multiple id separate",
             "value": ""
