@@ -189,13 +189,9 @@ async def start(app, message):
 async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
-@epicbot.on_message(filters.apk & filters.private)
-def document(bot, message):
- message.reply(message.apk.file_id) #get file
-
-@epicbot.on_message(filters.command('doc'))
-def document(bot, message):
- bot.send_apk(message.chat.id, "BQADAQADoAIAAq-jqEXufMUTzYHLkAI")
+@epicbot.on_message(filters.regex(pattern="TELEGRAM PREMIUM 👑"))   
+async def startprivate(bot, message):
+     await epicbot.send_document("me", "AAMCBAADGQEAAVIKLGK13XhxFrYEQdvX4kdjkWKrE6UbAAJADQACb7-YUYWxlA8INcUzAQAHbQADKQQ", caption="document caption")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
