@@ -30,6 +30,10 @@ import pymongo
 import aiofiles
 import datetime
 from pyrogram.errors.exceptions.bad_request_400 import *
+from pyrogram.types import InlineQueryResultArticle
+from pyrogram.types import InputTextMessageContent
+                            
+
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
