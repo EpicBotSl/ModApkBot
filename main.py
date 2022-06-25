@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import *
 from pyrogram.types import *
 from helper.decorators import humanbytes
-from advance.inline import *
+from utils import Media, unpack_new_file_id
 from config import *
 from script import *
 from database.db import Database
