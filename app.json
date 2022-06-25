@@ -36,6 +36,14 @@
             "description": "Private log chanel",
             "value": ""
         },
+        "CACHE_TIME": {
+            "description": "Inline Catch Time",
+            "value": ""
+        },
+        "AUTH_CHANNEL": {
+            "description": "for multiple id separate",
+            "value": ""
+        },
         "LOG_CHANNEL": {
             "description": "id of yout log chanel",
             "value": ""
