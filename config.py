@@ -19,4 +19,5 @@ AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1884885842 511533
 MONGO_URI = os.getenv("MONGO_URI")
 PRIVATE_LOG = os.getenv("PRIVATE_LOG")
 LOG_CHANNEL = os.getenv("LOG_CHANNEL")
+AUTH_CHANNEL = os.getenv("AUTH_CHANNEL")
 
