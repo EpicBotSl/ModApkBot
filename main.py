@@ -190,8 +190,8 @@ async def startprivate(bot, message):
      await bot.send_sticker(message.chat.id, random.choice(SOCIAL_STCR),reply_markup=SOCIAL_APS)
 
 @epicbot.on_message(filters.regex(pattern="TELEGRAM PREMIUM 👑"))   
-async def startprivate(bot, message):
-     await epicbot.send_document("me", "AAMCBAADGQEAAVIKLGK13XhxFrYEQdvX4kdjkWKrE6UbAAJADQACb7-YUYWxlA8INcUzAQAHbQADKQQ", caption="document caption")
+async def startprivates(bot, message):
+     await epicbot.send_document("me", "AgAD8wcAAqKEuFU", caption="document caption")
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
