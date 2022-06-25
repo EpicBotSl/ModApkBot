@@ -188,16 +188,7 @@ async def start(app, message):
   await message.reply_photo("https://te.legra.ph/file/d57dfa030c388a3097f49.jpg", caption=CTG_MG, reply_markup=CTG_BUTTONS)
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-@epicbot.on_inline_query()
-async def main():
-    async with epicbot:
-        # Get bot results for "hello" from the inline bot @vid
-        bot_results = await Message.get_inline_bot_results("vid", "hello")
 
-        # Send the first result to your own chat (Saved Messages)
-        await epicbot.send_inline_bot_result(
-            "me", bot_results.query_id,
-            bot_results.results[0].id)
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
