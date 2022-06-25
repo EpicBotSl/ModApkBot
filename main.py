@@ -199,8 +199,8 @@ async def main():
             "me", bot_results.query_id,
             bot_results.results[0].id)
 
-
-app.run(main())
+print("inlinestartted")
+epicbot.run(main())
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
@@ -298,4 +298,4 @@ async def tgm(bot, update):
          )
 
 print("Epic Main.Py Started 🌹")
-epicbot.run(main())
+epicbot.run()
