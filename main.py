@@ -33,6 +33,8 @@ import datetime
 from pyrogram.errors.exceptions.bad_request_400 import *
 from pyrogram.types import InlineQueryResultArticle
 from pyrogram.types import InputTextMessageContent
+from utils import Media, unpack_new_file_id
+
                             
 
 
