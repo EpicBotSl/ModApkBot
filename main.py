@@ -39,6 +39,14 @@ import logging.config
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.ERROR)
+
+epicbot = Client(
+    "Epic Mod Apk Bot",
+    bot_token= BOT_TOKEN,
+    api_id= API_ID,
+    api_hash= API_HASH,
+)
+
 logger = logging.getLogger(__name__)
 
 @epicbot.on_message(filters.command('start'))
@@ -133,14 +141,6 @@ async def delete(bot, message):
                             
 
 #=•=•=•=•=•=•=•=•=•=Db End Point•=•=•=•=•=•=•=•=•=•#
-epicbot = Client(
-    "Epic Mod Apk Bot",
-    bot_token= BOT_TOKEN,
-    api_id= API_ID,
-    api_hash= API_HASH,
-)
-
-
 
 print("Epic Main.Py Started 🌹")
 epicbot.run()
