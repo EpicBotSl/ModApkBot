@@ -7,7 +7,6 @@ from helper.decorators import humanbytes
 from utils import Media, unpack_new_file_id
 from config import *
 from script import *
-from database.db import Database
 from asyncio import *
 import heroku3
 import requests
