@@ -62,7 +62,7 @@ async def start(bot, message):
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(START_MSG, reply_markup=reply_markup)
 
-@epicbot.on_message(filters.command('channel') & filters.user(AUTH_USERS))
+@epicbot.on_message(filters.command('channel'))
 async def channel_info(bot, message):
     """Send basic information of channel"""
     if isinstance(AUTH_CHANNEL, (int, str)):
