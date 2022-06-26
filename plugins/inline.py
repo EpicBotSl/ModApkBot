@@ -8,7 +8,6 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InlineQue
 from utils import get_search_results
 from config import CACHE_TIME, AUTH_USERS, AUTH_CHANNEL
 from script import SHARE_BUTTON_TEXT
-
 logger = logging.getLogger(__name__)
 cache_time = 0 if AUTH_USERS or AUTH_CHANNEL else CACHE_TIME
 
