@@ -191,6 +191,35 @@ async def start(app, message):
   await message.reply_photo("https://te.legra.ph/file/d57dfa030c388a3097f49.jpg", caption=CTG_MG, reply_markup=CTG_BUTTONS)
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+@epicbot.on_message(filters.command('chan') & filters.user(AUTH_USERS))
+async def channel_info(bot, message):
+    """Send basic information of channel"""
+    if isinstance(AUTH_CHANNEL, (int, str)):
+        channels = [AUTH_CHANNEL]
+    elif isinstance(AUTH_CHANNEL, list):
+        channels = AUTH_CHANNEL
+    else:
+        raise ValueError("Unexpected type of AUTH_CHANNEL")
+
+    text = '📑 **Indexed channels/groups**\n'
+    for channel in channels:
+        chat = await bot.get_chat(channel)
+        if chat.username:
+            text += '\n@' + chat.username
+        else:
+            text += '\n' + chat.title or chat.first_name
+
+    text += f'\n\n**Total:** {len(AUTH_CHANNEL)}'
+
+    if len(text) < 4096:
+        await message.reply(text)
+    else:
+        file = 'Indexed channels.txt'
+        with open(file, 'w') as f:
+            f.write(text)
+        await message.reply_document(file)
+        os.remove(file)
+
 @epicbot.on_message(filters.command('total') & filters.user(AUTH_USERS))
 async def total(bot, message):
     """Show total files in database"""
