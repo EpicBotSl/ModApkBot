@@ -1,12 +1,12 @@
 from pyrogram import Client, filters
 
-from config import CHANNELS
+from config import AUTH_CHANNEL
 from utils import save_file
 
 media_filter = filters.document | filters.video | filters.audio
 
 
-@epicbot.on_message(filters.chat(CHANNELS) & media_filter)
+@epicbot.on_message(filters.chat(AUTH_CHANNEL) & media_filter)
 async def media(bot, message):
     """Media Handler"""
     for file_type in ("document", "video", "audio"):
