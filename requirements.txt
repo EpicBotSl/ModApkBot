@@ -12,9 +12,6 @@ telegraph
 youtube_search
 pytube
 Python_ARQ
-TgCrypto
-motor
-pymongo
 aiofiles
 dnspython
 python-dotenv
@@ -22,3 +19,7 @@ psutil
 heroku3
 marshmallow==3.14.1
 umongo==3.0.1
+pyrogram==2.0.26
+tgcrypto==1.2.3
+pymongo[srv]==3.12.3
+motor==2.5.1
