@@ -92,7 +92,7 @@ async def channel_info(bot, message):
         os.remove(file)
 
 
-@epicbot.on_message(filters.command('total') & filters.user(AUTH_USERS))
+@epicbot.on_message(filters.command('total'))
 async def total(bot, message):
     """Show total files in database"""
     msg = await message.reply("Processing...⏳", quote=True)
@@ -104,7 +104,7 @@ async def total(bot, message):
         await msg.edit(f'Error: {e}')
 
 
-@epicbot.on_message(filters.command('logger') & filters.user(AUTH_USERS))
+@epicbot.on_message(filters.command('logger'))
 async def log_file(bot, message):
     """Send log file"""
     try:
@@ -113,7 +113,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@epicbot.on_message(filters.command('delete') & filters.user(AUTH_CHANNEL))
+@epicbot.on_message(filters.command('delete'))
 async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
