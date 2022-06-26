@@ -33,7 +33,12 @@ from pyrogram.errors.exceptions.bad_request_400 import *
 from pyrogram.types import InlineQueryResultArticle
 from pyrogram.types import InputTextMessageContent
 from utils import Media, unpack_new_file_id
+import logging
+import logging.config
 
+# Get logging configurations
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.ERROR)
 logger = logging.getLogger(__name__)
 
 @epicbot.on_message(filters.command('start'))
