@@ -10,7 +10,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your Bot token from @Botfather",
-            "value": "5491777887:AAFriDnrwSIQlVqod1jQdrAebMtbygB_Aqg"
+            "value": "5517876331:AAF8eqZtWYiSV5oSlAdI3Af7eSmXamgfERs"
         },
         "API_ID": {
             "description": "Your API_ID from https://my.telegram.org/apps ",
@@ -18,7 +18,11 @@
         },
         "MONGO_URI": {
             "description": "mongo URL, Get it from mongodb.com",
-            "value": "mongodb+srv://Navanjana:Navanjana@cluster0.zdnpe.mongodb.net/?retryWrites=true&w=majority"
+            "value": "mongodb+srv://epic:epic@cluster0.257eaxu.mongodb.net/?retryWrites=true&w=majority"
+        },
+        "DATABASE_NAME": {
+            "description": "Your Database Name",
+            "value": "epic"
         },
         "AUTH_USERS": {
             "description": "Sudo User ids",
@@ -34,27 +38,27 @@
         },
         "PRIVATE_LOG": {
             "description": "Private log chanel",
-            "value": ""
+            "value": "-1001645328504"
         },
         "CACHE_TIME": {
             "description": "Inline Catch Time",
-            "value": ""
+            "value": "300"
         },
         "COLLECTION_NAME": {
             "description": "Collection Name",
-            "value": ""
+            "value": "Telegram_files"
         },
         "USE_CAPTION_FILTER": {
             "description": "Caption Filters",
-            "value": ""
+            "value": "False"
         },
         "AUTH_CHANNEL": {
             "description": "for multiple id separate",
-            "value": ""
+            "value": "-1001716279216"
         },
         "LOG_CHANNEL": {
             "description": "id of yout log chanel",
-            "value": ""
+            "value": "-1001645328504"
         },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps",
