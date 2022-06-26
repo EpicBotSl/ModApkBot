@@ -34,8 +34,6 @@ from pyrogram.errors.exceptions.bad_request_400 import *
 from pyrogram.types import InlineQueryResultArticle
 from pyrogram.types import InputTextMessageContent
 from utils import Media, unpack_new_file_id
-import logging
-logger = logging.getLogger(__name__)
                             
 
 
@@ -193,19 +191,6 @@ async def start(app, message):
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
 
-@epicbot.on_message(filters.command('total'))
-async def total(bot, message):
-    if message.from_user.id not in AUTH_USERS:
-        await message.delete()
-        return
-    """Show total files in database"""
-    msg = await message.reply("Processing...⏳", quote=True)
-    try:
-        total = await Media.count_documents()
-        await msg.edit(f'📁 Saved files: {total}')
-    except Exception as e:
-        logger.exception('Failed to check total files')
-        await msg.edit(f'Error: {e}')
 
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
