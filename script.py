@@ -72,6 +72,10 @@ START_MG = "🌱Welcome to Epic Mod Apk Bot⚡"
 
 SHARE_BUTTON_TEXT = "share please🏅"
 
+START_MSG = "Epic Apk Bot Starter"
+
+INVITE_MSG = "Join @EpicBotsSl"
+
 print("Buttons & message py started🔥"),
 print("Your Bot Is Running ⚡"),
 print("🌟Bot Started Successfully 🌟"),
