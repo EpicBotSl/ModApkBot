@@ -191,7 +191,7 @@ async def start(app, message):
   await message.reply_photo("https://te.legra.ph/file/d57dfa030c388a3097f49.jpg", caption=CTG_MG, reply_markup=CTG_BUTTONS)
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
-@epicbot.on_message(filters.command('total') & filters.user(ADMINS))
+@epicbot.on_message(filters.command('total') & filters.user(AUTH_USERS))
 async def total(bot, message):
     """Show total files in database"""
     msg = await message.reply("Processing...⏳", quote=True)
