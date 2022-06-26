@@ -1,6 +1,23 @@
 import datetime
 
 import motor.motor_asyncio
+import re
+import logging
+
+from pymongo.errors import DuplicateKeyError
+from umongo import Instance, Document, fields
+from motor.motor_asyncio import AsyncIOMotorClient
+from marshmallow.exceptions import ValidationError
+
+from config import MONGO_URI, DATABASE_NAME, COLLECTION_NAME, USE_CAPTION_FILTER
+from .helpers import unpack_new_file_id
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
+client = AsyncIOMotorClient(MONGO_URI)
+database = client[DATABASE_NAME]
+instance = Instance.from_db(database)
 
 class Database:
     def __init__(self, url, database_name):
