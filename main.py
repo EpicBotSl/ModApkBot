@@ -35,6 +35,10 @@ from pyrogram.types import InputTextMessageContent
 from utils import Media, unpack_new_file_id
 import logging
 import logging.config
+from pymongo.errors import DuplicateKeyError
+from umongo import Instance, Document, fields
+from motor.motor_asyncio import AsyncIOMotorClient
+from marshmallow.exceptions import ValidationError
 
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
