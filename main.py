@@ -90,7 +90,7 @@ async def startprivate(epicbot, message):
             logging.info(f"#NewUser :- Name : {message.from_user.first_name} ID : {message.from_user.id}")
     file_id = "CAACAgIAAxkBAAEFHSBitZsmpQpnfJ5XCFRtQ13JT74KLQACTgIAAladvQow_mttgTIDbykE"
     await epicbot.send_sticker(message.chat.id, file_id)
-    text = f"Hi 🌹{message.from_user.mention}, 🌱Welcome to **Epic Mod Apk Bot⚡**"
+    text = f"Hi {message.from_user.mention}, 🌱Welcome to **Epic Mod Apk Bot⚡**"
     reply_markup = START_BUTTON
     await message.reply_text(
         text=text,
@@ -189,6 +189,16 @@ async def start(app, message):
   await message.reply_photo("https://te.legra.ph/file/d57dfa030c388a3097f49.jpg", caption=CTG_MG, reply_markup=CTG_BUTTONS)
 
 #=•=•=•=•=•=•=•=•=Categories menu regex•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
+@epicbot.on_message(filters.command('total') & filters.user(ADMINS))
+async def total(bot, message):
+    """Show total files in database"""
+    msg = await message.reply("Processing...⏳", quote=True)
+    try:
+        total = await Media.count_documents()
+        await msg.edit(f'📁 Saved files: {total}')
+    except Exception as e:
+        logger.exception('Failed to check total files')
+        await msg.edit(f'Error: {e}')
 
 
 #=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•Epic Bots 2022© All Rights Resived•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=•=#
